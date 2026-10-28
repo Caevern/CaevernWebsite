@@ -1,10 +1,20 @@
 import { LitElement, html, css } from 'lit';
 
 class InfoBar extends LitElement {
+  static properties = {
+    channelName: { type: String },
+  };
+
+  constructor() {
+    super();
+
+    this.channelName = 'General';
+  }
+
   render() {
     return html`
         <section>
-            a
+            <span>${this.channelName}</span>
         </section>
     `;
   }
@@ -12,8 +22,11 @@ class InfoBar extends LitElement {
   static styles = css`
     section {
         background-color: var(--frame-bg-color);
-        height: 40px;
+        height: 60px;
         right: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
     }
   `;
 }

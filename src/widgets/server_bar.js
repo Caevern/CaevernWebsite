@@ -1,10 +1,12 @@
 import { LitElement, html, css } from 'lit';
+import "../elements/profile-button";
 
 class ServerBar extends LitElement {
   render() {
     return html`
         <section>
-            a
+            <profile-button profileType="home"></profile-button>
+            <profile-button profileType="server"></profile-button>
         </section>
     `;
   }
@@ -13,7 +15,12 @@ class ServerBar extends LitElement {
     section {
         background-color: var(--frame-bg-color);
         height: 100vh;
-        width: 100px;
+        width: 40px;
+        padding: 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   `;
 }
