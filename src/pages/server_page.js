@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit';
-import "../elements/chat-frame";
+import "../frames/chat-frame";
 
 class ServerPage extends LitElement {
   constructor() {

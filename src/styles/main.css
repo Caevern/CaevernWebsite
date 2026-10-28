@@ -2,7 +2,9 @@
     --primary-bg-color: rgb(20, 20, 20);
     --frame-bg-color: rgb(30, 30, 30);
     --primary-text-color: rgb(200, 200, 200);
+    --secondary-text-color: rgb(150, 150, 150);
     --primary-profile-bg-color: rgb(50, 50, 50);
+    --primary-message-bg-color: rgb(30, 30, 30);
 }
 
 body {

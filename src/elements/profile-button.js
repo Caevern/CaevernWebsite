@@ -14,10 +14,10 @@ class ProfileButton extends LitElement {
   #getProfileImage() {
     switch(this.profileType) {
       case "server":
-        return html`<img alt="Friends Icon" src="/src/assets/icons/server.svg">`;
+        return html`<img alt="Server Icon" src="/src/assets/icons/server.svg">`;
       break;
-      case "friend":
-        return html`<img alt="Friends Icon" src="/src/assets/icons/person.svg">`;
+      case "profile":
+        return html`<img alt="Profile Icon" src="/src/assets/icons/person.svg">`;
       break;
       default:
         return html`<img alt="Friends Icon" src="/src/assets/icons/favorite.svg">`;

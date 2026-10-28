@@ -1,10 +1,11 @@
 import { LitElement, html, css } from 'lit';
+import "../elements/chat-message";
 
 class ChatFrame extends LitElement {
   render() {
     return html`
         <section>
-            CHAT CHAT CHAT
+            <chat-message></chat-message>
         </section>
     `;
   }
